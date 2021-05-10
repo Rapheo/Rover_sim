@@ -21,10 +21,17 @@ public class Player_controller : MonoBehaviour
     private float forwardAcceleration = 2f, strafeAcceleration = 2f, hoverAccleration = 2f;
 
     public float lookRateSpeed = 90f;
-    private Vector2  lookInput, screenCenter, mouseDistance;
+    private Vector2 lookInput, screenCenter, mouseDistance;
+
+    private GameObject player;
+
+    Rigidbody playerRigidBody;
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerRigidBody = player.GetComponent<Rigidbody>();
+
         screenCenter.x = Screen.width * .5f;
         screenCenter.y = Screen.height * .5f;
 
@@ -33,13 +40,15 @@ public class Player_controller : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(audioController)) {
+        if (Input.GetKeyDown(audioController))
+        {
             if (u_play == true)
             {
                 UnderWater_audio.Stop();
                 u_play = false;
             }
-            else {
+            else
+            {
                 UnderWater_audio.Play();
             }
         }
@@ -54,21 +63,26 @@ public class Player_controller : MonoBehaviour
             //rd.drag = 0.0f;
             transform.Rotate(Vector3.up * lookRateSpeed * Time.deltaTime);
 
-        } else if(Input.GetKey(KeyReset_rotate))
+        }
+        else if (Input.GetKey(KeyReset_rotate))
         {
             Vector3 eulerRotation = transform.rotation.eulerAngles;
             transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
         }
-        lookInput.x = Input.mousePosition.x;
-        lookInput.y = Input.mousePosition.y;
+        if (Input.GetMouseButton(0))
+        {
+            lookInput.x = Input.mousePosition.x;
+            lookInput.y = Input.mousePosition.y;
 
-        mouseDistance.x = (lookInput.x - screenCenter.x) / screenCenter.y;
-        mouseDistance.y = (lookInput.y - screenCenter.y) / screenCenter.y;
+            // playerRigidBody.constraints = RigidbodyConstraints.FreezeRotationZ;
 
-        mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
+            mouseDistance.x = (lookInput.x - screenCenter.x) / screenCenter.y;
+            mouseDistance.y = (lookInput.y - screenCenter.y) / screenCenter.y;
 
-        transform.Rotate(-mouseDistance.y * lookRateSpeed * Time.deltaTime, mouseDistance.x * lookRateSpeed * Time.deltaTime, 0f, Space.Self);
+            mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
 
+            transform.Rotate(-mouseDistance.y * lookRateSpeed * Time.deltaTime, mouseDistance.x * lookRateSpeed * Time.deltaTime, 0f, Space.Self);
+        }
         activeForwardSpeed = Mathf.Lerp(activeForwardSpeed, Input.GetAxisRaw("Vertical") * forwardSpeed, forwardAcceleration * Time.deltaTime);
         activeStrafSpeed = Mathf.Lerp(activeStrafSpeed, Input.GetAxisRaw("Horizontal") * strafeSpeed, strafeAcceleration * Time.deltaTime);
         activeHaverSpeed = Mathf.Lerp(activeHaverSpeed, Input.GetAxisRaw("Hover") * hoverSpeed, hoverAccleration * Time.deltaTime);
