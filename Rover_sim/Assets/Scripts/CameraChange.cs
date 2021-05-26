@@ -9,12 +9,20 @@ public class CameraChange : MonoBehaviour
 
     public GameObject ThirdCam;
     public GameObject FirstCam;
-    public int CamMode = 0;
+    public GameObject Free_Cam;
+    public int CamMode = 1;
 
+
+    private void Start()
+    {
+        Free_Cam.SetActive(false);
+        FirstCam.SetActive(false);
+        ThirdCam.SetActive(true);
+    }
     void Update()
     {
         if (Input.GetKeyDown(CamChange)) {
-            if (CamMode == 1)
+            if (CamMode == 2)
             {
                 CamMode = 0;
             }
@@ -30,11 +38,20 @@ public class CameraChange : MonoBehaviour
         if (CamMode == 1) {
             ThirdCam.SetActive(true);
             FirstCam.SetActive(false);
+            Free_Cam.SetActive(false);
         }
         if (CamMode == 0) {
             FirstCam.SetActive(true);
             ThirdCam.SetActive(false);
+            Free_Cam.SetActive(false);
         }
+        if (CamMode == 2)
+        {
+            Free_Cam.SetActive(true);
+            FirstCam.SetActive(false);
+            ThirdCam.SetActive(false);
+        }
+
     }
 
 }
