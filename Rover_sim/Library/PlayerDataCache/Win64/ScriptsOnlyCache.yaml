@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - AQUAS.AQUAS_SmallBubbleBehaviour
     - CameraChange
     - CopyPosition
+    - FreeCam
     - Player_controller
     - Restart
     Unity.Postprocessing.Runtime.dll:
@@ -70,41 +71,45 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 15492}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 15494}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 15744}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 15764}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 15772}
+      Script: {instanceID: 11410}
     - Class: 114
-      Script: {instanceID: 15792}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 18874}
+      Script: {instanceID: 11552}
     - Class: 114
-      Script: {instanceID: 18878}
+      Script: {instanceID: 11664}
     - Class: 114
-      Script: {instanceID: 18880}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 18884}
+      Script: {instanceID: 11886}
     - Class: 114
-      Script: {instanceID: 18902}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 18916}
+      Script: {instanceID: 12268}
     - Class: 114
-      Script: {instanceID: 18922}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 18972}
+      Script: {instanceID: 12364}
     - Class: 114
-      Script: {instanceID: 19036}
+      Script: {instanceID: 12480}
     - Class: 114
-      Script: {instanceID: 19038}
+      Script: {instanceID: 12522}
     - Class: 114
-      Script: {instanceID: 72472}
+      Script: {instanceID: 12868}
     - Class: 114
-      Script: {instanceID: 73228}
+      Script: {instanceID: 13226}
+    - Class: 114
+      Script: {instanceID: 13234}
+    - Class: 114
+      Script: {instanceID: 13268}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -126,10 +131,28 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a1f19ad47d3094e235f21b74dfc423a8
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessLayer
+  - hash:
+      serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 726fcf7961cbb4108aa5be5e55b8c8bf
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ColorGrading
+  - hash:
+      serializedVersion: 2
+      Hash: b13de7a0a457cb8e026d4237dc1b5797
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: LensDistortion
   - hash:
       serializedVersion: 2
       Hash: c42672c997f8be6b1aa86a927ebea785
@@ -150,6 +173,24 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 0b456d6b7407cd70c241076f343a3f84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_Screenshotter
+  - hash:
+      serializedVersion: 2
+      Hash: 066712de5905c504d4ec0de912a78726
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player_controller
+  - hash:
+      serializedVersion: 2
+      Hash: 71f7f12b8d0f4fd73590db8bcb6d453c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Bloom
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -160,6 +201,24 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: af93f9c42e90877a9ba31e37adfd900c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: MotionBlur
+  - hash:
+      serializedVersion: 2
+      Hash: beb68b1892dc3903c176405305d534d1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_Caustics
+  - hash:
+      serializedVersion: 2
+      Hash: 9e1be4c1aa67fb32aa70d026d54f777d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_BubbleBehaviour
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -210,16 +269,52 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: f542c1afca5bb4022f91fdda19b8d622
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: DepthOfField
+  - hash:
+      serializedVersion: 2
       Hash: 234d407605354852c48e57df17c9a1c6
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 1520472d77ca9c9e79f73d67f50984ef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MovingInCircles
+  - hash:
+      serializedVersion: 2
+      Hash: ee6e08847677f61f526a522bc58ebfbb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_RippleManager
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 12370857d5f346495d0a5b2c000edd9f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player_rotation
+  - hash:
+      serializedVersion: 2
+      Hash: 63d7b9b64a11859f416d72ba9a3c3fec
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ScreenSpaceReflections
+  - hash:
+      serializedVersion: 2
+      Hash: 51aad0fd3ceed1e503ec17651bce2cde
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_Buoyancy
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -234,6 +329,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessProfile
+  - hash:
+      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -246,6 +347,24 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: ce797417b242aba0fdf0541ae01de870
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_BoundaryMask
+  - hash:
+      serializedVersion: 2
+      Hash: e82c0521cdfe8cb6a168ef7208a98d4a
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Vignette
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_Camera
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -256,6 +375,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 3c486bd863e1b3d02a364917f11d5095
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_UnderWaterEffect_Simple
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_Container
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -282,10 +413,28 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 51270027838fdaf8827d03068bbdcc5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_BubbleMorph
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 4a7e60c038c4e87d47bcd050dc107e9b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_CamNav
+  - hash:
+      serializedVersion: 2
+      Hash: 7e6ed836cbaa230e56d6a2bbae1b9bb5
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -298,6 +447,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: a09776923e8d562b79d4937f6bc9f1dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Add_Player_Controlled_Velocity
   - hash:
       serializedVersion: 2
       Hash: 5cc439bf63c0539d39588e69465ac2ab
@@ -318,10 +473,28 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 61b9d9b6f4b6a222dfea8b131b3d3227
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ChromaticAberration
+  - hash:
+      serializedVersion: 2
+      Hash: 8e39043bf9ff533761e4a44cfd217cab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_DepthSupport
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 974b449e8a2250b6d02e90981c581191
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FreeCam
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -330,10 +503,40 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 38451548ce1f2de6146d7ed9c18eae3f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_UnderwaterParameters
+  - hash:
+      serializedVersion: 2
+      Hash: 9bf282964ff8fca2ebe50ab10da9aa2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_SmallBubbleBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e92cb335ad4040796599e9161b5d3f2c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_RenderQueueEditor
+  - hash:
+      serializedVersion: 2
+      Hash: d6fc8d3165070298511ec776ea575626
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessResources
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: a53651ee3996fbba20dfe0fce02f0b23
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AutoExposure
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -342,10 +545,28 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 281f4ba20c0f2c5dc3e05efa838cc924
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Restart
+  - hash:
+      serializedVersion: 2
+      Hash: 50c443b12ccc0b475183318b5088bcc5
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessDebug
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: WaterSimple
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -360,10 +581,34 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 5c00a8b8f89b73107e80c5626a539e41
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CopyPosition
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 6f456d776803fc7f52ea651db5ba23f8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraChange
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_ReflectNot
+  - hash:
+      serializedVersion: 2
+      Hash: a4ab9532686dbd13bc2c5bb58a3781ce
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: MouseLook
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -376,6 +621,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef05a8414820c3eb1847fe9c7bfa84c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_CaptureBackground
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -408,10 +659,40 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 1a1bc043c01449c438dc5d0469c31c7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_Reflection
+  - hash:
+      serializedVersion: 2
+      Hash: cba43df36e5f93436e62b49402abd50f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Add_Constant_Velocity
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: c5bf4456ce860b8cffa311d691ab5db7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_CamLock_PG
+  - hash:
+      serializedVersion: 2
+      Hash: c3159dd15a29b5388786a39fdb6cdc2d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_FrontFaceMask
+  - hash:
+      serializedVersion: 2
+      Hash: aea9c251ea734e7b444a9aaa44c28e73
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_RippleController
   - hash:
       serializedVersion: 2
       Hash: 6939772cb3ce775a8e8d99f332534491
@@ -432,10 +713,40 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 2053aadf721134a92db30eb5b745cfe8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_UnderWaterEffect
+  - hash:
+      serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 0e20a0d23248338d82933e11a2b29625
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_RenderColor
+  - hash:
+      serializedVersion: 2
+      Hash: a9b040d2c76a922b2bae102612481407
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_RenderDepth
+  - hash:
+      serializedVersion: 2
+      Hash: 58af1be44895f1a455ad8d5db565351a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_CamLock
+  - hash:
+      serializedVersion: 2
+      Hash: 952978ce5219f036b22ce9b47aeb805a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_ProjectedGrid
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -448,6 +759,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: d5630f96bd5a6a6eed7e1754c3fb8703
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessVolume
+  - hash:
+      serializedVersion: 2
+      Hash: d0987ce3e9092dbe0fa30d73f333fffa
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Grain
   - hash:
       serializedVersion: 2
       Hash: 8cd1cbba27f3cb1717254f668e9e0d5a
@@ -468,10 +791,22 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: ac6acd886c54c48c599ab5fed5781ea7
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AmbientOcclusion
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: c3159dd15a29b5388786a39fdb6cdc2d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: AQUAS
+    className: AQUAS_VolumeMask
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -544,331 +879,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: a09776923e8d562b79d4937f6bc9f1dc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Add_Player_Controlled_Velocity
-  - hash:
-      serializedVersion: 2
-      Hash: 281f4ba20c0f2c5dc3e05efa838cc924
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Restart
-  - hash:
-      serializedVersion: 2
-      Hash: 5c00a8b8f89b73107e80c5626a539e41
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CopyPosition
-  - hash:
-      serializedVersion: 2
-      Hash: cba43df36e5f93436e62b49402abd50f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Add_Constant_Velocity
-  - hash:
-      serializedVersion: 2
-      Hash: 0b456d6b7407cd70c241076f343a3f84
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_Screenshotter
-  - hash:
-      serializedVersion: 2
-      Hash: beb68b1892dc3903c176405305d534d1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_Caustics
-  - hash:
-      serializedVersion: 2
-      Hash: 9e1be4c1aa67fb32aa70d026d54f777d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_BubbleBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 1520472d77ca9c9e79f73d67f50984ef
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MovingInCircles
-  - hash:
-      serializedVersion: 2
-      Hash: ee6e08847677f61f526a522bc58ebfbb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_RippleManager
-  - hash:
-      serializedVersion: 2
-      Hash: 51aad0fd3ceed1e503ec17651bce2cde
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_Buoyancy
-  - hash:
-      serializedVersion: 2
-      Hash: ce797417b242aba0fdf0541ae01de870
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_BoundaryMask
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_Camera
-  - hash:
-      serializedVersion: 2
-      Hash: 3c486bd863e1b3d02a364917f11d5095
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_UnderWaterEffect_Simple
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_Container
-  - hash:
-      serializedVersion: 2
-      Hash: 51270027838fdaf8827d03068bbdcc5a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_BubbleMorph
-  - hash:
-      serializedVersion: 2
-      Hash: 4a7e60c038c4e87d47bcd050dc107e9b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_CamNav
-  - hash:
-      serializedVersion: 2
-      Hash: 8e39043bf9ff533761e4a44cfd217cab
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_DepthSupport
-  - hash:
-      serializedVersion: 2
-      Hash: 38451548ce1f2de6146d7ed9c18eae3f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_UnderwaterParameters
-  - hash:
-      serializedVersion: 2
-      Hash: 9bf282964ff8fca2ebe50ab10da9aa2b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_SmallBubbleBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e92cb335ad4040796599e9161b5d3f2c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_RenderQueueEditor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_ReflectNot
-  - hash:
-      serializedVersion: 2
-      Hash: 4ef05a8414820c3eb1847fe9c7bfa84c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_CaptureBackground
-  - hash:
-      serializedVersion: 2
-      Hash: 1a1bc043c01449c438dc5d0469c31c7d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_Reflection
-  - hash:
-      serializedVersion: 2
-      Hash: c5bf4456ce860b8cffa311d691ab5db7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_CamLock_PG
-  - hash:
-      serializedVersion: 2
-      Hash: c3159dd15a29b5388786a39fdb6cdc2d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_FrontFaceMask
-  - hash:
-      serializedVersion: 2
-      Hash: aea9c251ea734e7b444a9aaa44c28e73
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_RippleController
-  - hash:
-      serializedVersion: 2
-      Hash: 2053aadf721134a92db30eb5b745cfe8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_UnderWaterEffect
-  - hash:
-      serializedVersion: 2
-      Hash: 0e20a0d23248338d82933e11a2b29625
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_RenderColor
-  - hash:
-      serializedVersion: 2
-      Hash: a9b040d2c76a922b2bae102612481407
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_RenderDepth
-  - hash:
-      serializedVersion: 2
-      Hash: 58af1be44895f1a455ad8d5db565351a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_CamLock
-  - hash:
-      serializedVersion: 2
-      Hash: 952978ce5219f036b22ce9b47aeb805a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_ProjectedGrid
-  - hash:
-      serializedVersion: 2
-      Hash: c3159dd15a29b5388786a39fdb6cdc2d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: AQUAS
-    className: AQUAS_VolumeMask
-  - hash:
-      serializedVersion: 2
-      Hash: a1f19ad47d3094e235f21b74dfc423a8
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessLayer
-  - hash:
-      serializedVersion: 2
-      Hash: 726fcf7961cbb4108aa5be5e55b8c8bf
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: ColorGrading
-  - hash:
-      serializedVersion: 2
-      Hash: b13de7a0a457cb8e026d4237dc1b5797
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: LensDistortion
-  - hash:
-      serializedVersion: 2
-      Hash: 71f7f12b8d0f4fd73590db8bcb6d453c
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: Bloom
-  - hash:
-      serializedVersion: 2
-      Hash: af93f9c42e90877a9ba31e37adfd900c
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: MotionBlur
-  - hash:
-      serializedVersion: 2
-      Hash: f542c1afca5bb4022f91fdda19b8d622
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: DepthOfField
-  - hash:
-      serializedVersion: 2
-      Hash: 63d7b9b64a11859f416d72ba9a3c3fec
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: ScreenSpaceReflections
-  - hash:
-      serializedVersion: 2
-      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessProfile
-  - hash:
-      serializedVersion: 2
-      Hash: e82c0521cdfe8cb6a168ef7208a98d4a
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: Vignette
-  - hash:
-      serializedVersion: 2
-      Hash: 7e6ed836cbaa230e56d6a2bbae1b9bb5
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessEffectSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 61b9d9b6f4b6a222dfea8b131b3d3227
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: ChromaticAberration
-  - hash:
-      serializedVersion: 2
-      Hash: d6fc8d3165070298511ec776ea575626
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessResources
-  - hash:
-      serializedVersion: 2
-      Hash: a53651ee3996fbba20dfe0fce02f0b23
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: AutoExposure
-  - hash:
-      serializedVersion: 2
-      Hash: 50c443b12ccc0b475183318b5088bcc5
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessDebug
-  - hash:
-      serializedVersion: 2
-      Hash: d5630f96bd5a6a6eed7e1754c3fb8703
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessVolume
-  - hash:
-      serializedVersion: 2
-      Hash: d0987ce3e9092dbe0fa30d73f333fffa
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: Grain
-  - hash:
-      serializedVersion: 2
-      Hash: ac6acd886c54c48c599ab5fed5781ea7
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: AmbientOcclusion
-  - hash:
-      serializedVersion: 2
-      Hash: 12370857d5f346495d0a5b2c000edd9f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Player_rotation
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: 
-    className: WaterSimple
-  - hash:
-      serializedVersion: 2
-      Hash: a4ab9532686dbd13bc2c5bb58a3781ce
-    assemblyName: Assembly-CSharp-firstpass.dll
-    namespaceName: 
-    className: MouseLook
-  - hash:
-      serializedVersion: 2
-      Hash: d256674d7e0a2c60b8d785d8e266e927
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraChange
-  - hash:
-      serializedVersion: 2
-      Hash: 066712de5905c504d4ec0de912a78726
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Player_controller
   platform: 19
   scenePathNames:
   - Assets/Scenes/UnderWater.unity
-  playerPath: D:/Games/My Games/Rover_sim.exe
+  playerPath: D:/Games/My Games/Rover_sim 2.0/Rover_sim.exe
