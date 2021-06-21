@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player_controller : MonoBehaviour
 {
     [SerializeField]
@@ -14,6 +15,9 @@ public class Player_controller : MonoBehaviour
     KeyCode audioController;
     [SerializeField]
     AudioSource UnderWater_audio;
+
+
+
     private bool u_play = true;
 
     public float forwardSpeed = 7.5f, strafeSpeed = 7.5f, hoverSpeed = 5f;
@@ -34,6 +38,7 @@ public class Player_controller : MonoBehaviour
 
         screenCenter.x = Screen.width * .5f;
         screenCenter.y = Screen.height * .5f;
+ 
 
         Cursor.lockState = CursorLockMode.Confined;
     }

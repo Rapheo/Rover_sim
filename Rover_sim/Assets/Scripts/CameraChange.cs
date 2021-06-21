@@ -15,6 +15,7 @@ public class CameraChange : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = false;
         Free_Cam.SetActive(false);
         FirstCam.SetActive(false);
         ThirdCam.SetActive(true);

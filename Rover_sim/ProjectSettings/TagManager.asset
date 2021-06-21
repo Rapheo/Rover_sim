@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fan_1_Left
+  - Fan_2_Left
+  - Fan_3_Left
+  - Fan_1_Right
+  - Fan_2_Right
+  - Fan_3_Right
   layers:
   - Default
   - TransparentFX

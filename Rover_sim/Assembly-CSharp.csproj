@@ -96,9 +96,11 @@
     <Compile Include="Assets\Scripts\Add_Player_Controlled_Velocity.cs" />
     <Compile Include="Assets\Scripts\CameraChange.cs" />
     <Compile Include="Assets\Scripts\CopyPosition.cs" />
+    <Compile Include="Assets\Scripts\Fan.cs" />
     <Compile Include="Assets\Scripts\FreeCam.cs" />
     <Compile Include="Assets\Scripts\Player_controller.cs" />
     <Compile Include="Assets\Scripts\Player_rotation.cs" />
+    <Compile Include="Assets\Scripts\ReplaceWithPrefab.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
     <None Include="Assets\AQUAS 2020\Shaders\Underwater\AQUAS_VolumeMask.shader" />
     <None Include="Assets\Exterior_swimming_pool\Documentation\Readme.txt" />
